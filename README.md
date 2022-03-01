@@ -12,7 +12,10 @@ Feedforward Ring VCO consist of Forward path inverters and feedforward path inve
 ![image](https://user-images.githubusercontent.com/48211474/156181023-d5cf4ed1-28e3-4813-a527-740eebe1ed6a.png)
 Fig:2 Feedforward Ring VCO
 
-The Noise sensing block shown in Fig  3 has two current branches. In one branch, supply noise voltage is directly affecting the voltage node Vn whereas supply noise is filtered at noise Vnavg because of capacitor filtering effect. The current in Vn branch is designed to be larger than Vnavg branch. Vd will be -
+The Noise sensing block shown in Fig  3 has two current branches. In one branch, supply noise voltage is directly affecting the voltage node Vn whereas supply noise is filtered at noise Vnavg because of capacitor filtering effect. The current in Vn branch is designed to be larger than Vnavg branch. Vd will be **A(Vn-Vnavg)**** whereas Vf will be **A(Vnavg-Vn)** where A is gain of inverting amplifier shown in Fig:3
 
 ![image](https://user-images.githubusercontent.com/48211474/156181549-fc9dc8b7-0bf9-4bd5-8f98-517ada385e08.png)
 Fig 3: Noise sensing block
+
+![image](https://user-images.githubusercontent.com/48211474/156191786-2643b33f-6d3f-4b82-84ba-dd0e1f73decf.png)
+Fig 4: Noise sensing functioning
