@@ -3,10 +3,13 @@ This report presents the **Low Voltage Phase-Locked Loop(PLL)** with supply nois
 body terminals of Feedforward and forward path in VCO. Other PLL blocks like Phase frequency detector(PFD), Charge pump,Loop filter and Frequency divider will be designed according to mentioned target specifications.
 
 # Introduction
-For low power applications, PLL design becomes challenging task because of lower suppl voltage. As supply voltage scales down, supply voltage noise also needs to be considered while designing any block. There are many factor contributing to supply voltage noise. One simple technique is to place large capacitor between supply and ground. This requires sufficiently larger area.In the discussed design [1], we have supply noise sensing block which senses supply voltage noise and compares with the average value of supply voltage (F ig : 3) and the comparison result is then feedback to Feedforward and forward path of ring VCO as shown in Fig:1 and 2.
+For low power applications, PLL design becomes challenging task because of lower suppl voltage. As supply voltage scales down, supply voltage noise also needs to be considered while designing any block. There are many factor contributing to supply voltage noise. One simple technique is to place large capacitor between supply and ground. This requires sufficiently larger area.In the below design, we have supply noise sensing block which senses supply voltage noise and compares with the average value of supply voltage (Fig:3) and the comparison result is then feedback to Feedforward and forward path of ring VCO as shown in Fig:1 and 2.
 
 ![PLL](https://user-images.githubusercontent.com/48211474/156175166-76aab5ba-b27f-47b7-93d9-a235cfaf3c83.png)
                                                                   Fig:1 Low Voltage PLL
 
 ![image](https://user-images.githubusercontent.com/48211474/156181023-d5cf4ed1-28e3-4813-a527-740eebe1ed6a.png)
 Fig:2 Feedforward Ring VCO
+
+![image](https://user-images.githubusercontent.com/48211474/156181549-fc9dc8b7-0bf9-4bd5-8f98-517ada385e08.png)
+Fig 3: Noise sensing block
