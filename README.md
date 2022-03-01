@@ -7,6 +7,9 @@
 #### Feedback Frequency detector <br/>
 #### Loop filter <br/>
 ### PLL top level design <br/>
+### Tools Used <br/>
+### Reference <br/>
+### Acknowledgement <br/>
 
 # Abstract
 This report presents the **Low Voltage Phase-Locked Loop(PLL)** with supply noise compensation. Feedforward Ring Voltage Controlled Oscillator(VCO) with output frequency of 1500MHz and Maximum current consumption less than 1mA will be designed. As supply voltage is scaled, supply noise becomes bottleneck in VCO design. For reducing the effect of supply voltage noise in VCO, supply noise is being compared with average value of supply voltage and being feeded back to the
@@ -107,6 +110,20 @@ Following is the Frequency v/s time plot to show the noise suppression effect. R
   Here Initial voltage at loop filter was set as 0.6 for faster PLL simulations. Therefore PLL started settling from 0.6 and it settled around 14 us
   
   
+# Tools used
+#### Synopsys Custom compiler
+#### Synopys Primewave
+#### 28nm PDK
+
+# References
+
+1. Sung-Geun Kim et. al. ”A Low Voltage PLL With a Supply-Noise Compensated Feedforward Ring VCO” IEEE TCAS-II, 2016. <br/>
+2. Y.S. Park et. al. ”Linear analysis of feedforward ring oscillators”,IEICE Trans. Electron., vol.E93-C,no.9 pp. 1467-1470, Sept 2010. <br/>
+
+# Acknowledgements
+1. VSD Corp. Pvt. Ltd. <br/>
+2. Synopsys India <br/>
+3. IIT Hyderabad <br/>
 
                                         
  
