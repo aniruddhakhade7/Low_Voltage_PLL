@@ -54,12 +54,12 @@ Following is the Frequency v/s time plot to show the noise suppression effect. R
  
  # Phase Frequency Detector (PFD) Design
  PFD was designed to detect phase difference between reference and feedback signal. This will generate UP and DN pulse depending on phase difference between the signals. Following is the schematic of the PFD
- ![image](https://user-images.githubusercontent.com/48211474/156201771-05ba27fa-3e3f-45d6-8991-df890b017392.png)
-                                        Fig 13: PFD schematics
-  ![image](https://user-images.githubusercontent.com/48211474/156201902-5960924a-a7f7-4e5f-8ba8-bb943cbd8c23.png)
-                                        Fig 14: D flipflop schematics
-   ![image](https://user-images.githubusercontent.com/48211474/156202021-54e1a86c-ee68-4621-8d08-82b5872c3448.png)
-                                        Fig 15: NAND gate schematics
+ ![image](https://user-images.githubusercontent.com/48211474/156201771-05ba27fa-3e3f-45d6-8991-df890b017392.png) <br/>
+                                        Fig 13: PFD schematics <br/>
+  ![image](https://user-images.githubusercontent.com/48211474/156201902-5960924a-a7f7-4e5f-8ba8-bb943cbd8c23.png) <br/>
+                                        Fig 14: D flipflop schematics <br/>
+   ![image](https://user-images.githubusercontent.com/48211474/156202021-54e1a86c-ee68-4621-8d08-82b5872c3448.png) <br/>
+                                        Fig 15: NAND gate schematics <br/>
                                         
 
 
