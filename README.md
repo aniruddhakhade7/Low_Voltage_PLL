@@ -45,5 +45,6 @@ VCO along with supply noise sensing block is as follows: <br/>
                                        Fig 10: VCO along with noise sensing block
 Above VCO along with noise sensing block was simulated. Following are the waveforms. We can observe the relationship between VDD, Vn and Vnavg which we discussed in previous section
 ![image](https://user-images.githubusercontent.com/48211474/156198451-11449172-d6be-47eb-bfff-aaf351bfc624.png)
+                                       Fig 11: VCO along with noise sensing block simulation results
 
 
