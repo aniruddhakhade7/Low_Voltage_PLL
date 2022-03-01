@@ -23,6 +23,7 @@ If we have supply noise of sinusoidal nature (Assumed noise to be sinusoid for i
 Fig 4: Noise sensing functioning
 
 # Feedforward Ring VCO design
+VCO is designed as shown in Fig: 5. It has feedforward and feedback inverter as shown in Fig 6 and 7.
 ![image](https://user-images.githubusercontent.com/48211474/156193952-0d8d8d6a-8b9b-40c5-934c-fbc323572df2.png) <br/>
                                         Fig 5: Feedforward Ring VCO schematics
 
@@ -31,5 +32,13 @@ Fig 4: Noise sensing functioning
                                         
                                         
 ![image](https://user-images.githubusercontent.com/48211474/156194218-1d044628-dd81-4053-8baf-e42f0908488b.png)<br/>
-                                        Fig 7: Feedback path inverter
+                                        Fig 7: Feedback path inverter <br/>
+                                        
+ ![image](https://user-images.githubusercontent.com/48211474/156195259-03ef90cd-437a-45bb-9504-640dad45a7c1.png)<br/>
+                                       Fig 8: Noise Sensing block
+                                       
+   ![image](https://user-images.githubusercontent.com/48211474/156195438-7371c52e-a684-4acc-970c-c5cce27699af.png) <br/>
+                                       Fig 9: Inverting Amplifier
+
+
 
