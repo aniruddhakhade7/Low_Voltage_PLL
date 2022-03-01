@@ -43,5 +43,7 @@ VCO is designed as shown in Fig: 5. It has feedforward and feedback inverter as 
 VCO along with supply noise sensing block is as follows: <br/>
 ![image](https://user-images.githubusercontent.com/48211474/156195872-b2415a05-fdcf-48bb-9f3b-845e5c66ec3b.png) <br/>
                                        Fig 10: VCO along with noise sensing block
+Above VCO along with noise sensing block was simulated for 
+![image](https://user-images.githubusercontent.com/48211474/156198451-11449172-d6be-47eb-bfff-aaf351bfc624.png)
 
 
