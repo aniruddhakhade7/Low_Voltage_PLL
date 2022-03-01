@@ -8,11 +8,11 @@ For low power applications, PLL design becomes challenging task because of lower
 ![PLL](https://user-images.githubusercontent.com/48211474/156175166-76aab5ba-b27f-47b7-93d9-a235cfaf3c83.png)
                                                                   Fig:1 Low Voltage PLL
                                                                 
-Feedforward Ring VCO consist of Forward path inverters and feedforward path inverters. When Forward path inverter becomes stronger, Oscillation frequency will incarese. When Feedforward path inverter becomes stronger, then Oscillation frequency will decrease. If Vd increases, then forward path will become weaker and hence oscillation frequency will reduce. If Vf incraeses, Feedfoward path will become weaker and Oscillation frequency will incraese.
+Feedforward Ring VCO consist of Forward path inverters and feedforward path inverters. When Forward path inverter becomes stronger, Oscillation frequency will increase. When Feedforward path inverter becomes stronger, then Oscillation frequency will decrease. If Vd increases, then forward path will become weaker (due to body effect) and hence oscillation frequency will reduce.Similarly, If Vf increases, Feedfoward path will become weaker and Oscillation frequency will increase. Vd and Vf are generated from Supply noise sensing block. 
 ![image](https://user-images.githubusercontent.com/48211474/156181023-d5cf4ed1-28e3-4813-a527-740eebe1ed6a.png)
 Fig:2 Feedforward Ring VCO
 
-The Noise sensing block shown in Fig  3 has two current branches. In one branch, supply noise voltage is directly affecting the voltage node Vn whereas supply noise is filtered at noise Vnavg because of capacitor filtering effect. The current in Vn branch is designed to be larger than Vnavg branch.
+The Noise sensing block shown in Fig  3 has two current branches. In one branch, supply noise voltage is directly affecting the voltage node Vn whereas supply noise is filtered at noise Vnavg because of capacitor filtering effect. The current in Vn branch is designed to be larger than Vnavg branch. Vd will be -
 
 ![image](https://user-images.githubusercontent.com/48211474/156181549-fc9dc8b7-0bf9-4bd5-8f98-517ada385e08.png)
 Fig 3: Noise sensing block
