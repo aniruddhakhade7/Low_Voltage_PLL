@@ -1,0 +1,246 @@
+*  Generated for: PrimeSim
+*  Design library name: LOW_VOLTAGE_PLL
+*  Design cell name: PLL_TOP
+*  Design view name: schematic
+.lib 'saed32nm.lib' TT
+.param FREF=36.98meg
+*Custom Compiler Version S-2021.09
+*Tue Mar  1 16:41:23 2022
+
+.global gnd! vdd!
+********************************************************************************
+* Library          : LOW_VOLTAGE_PLL
+* Cell             : INV
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt inv gnd_1 in out vdd vt_bulk_n_gnd! vt_bulk_p_vdd!
+xm0 out in vdd vt_bulk_p_vdd! p105 w=0.1u l=0.03u nf=1 m=20
+xm1 out in gnd_1 vt_bulk_n_gnd! n105 w=0.1u l=0.03u nf=1 m=10
+.ends inv
+
+********************************************************************************
+* Library          : LOW_VOLTAGE_PLL
+* Cell             : PASS_GATE
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt pass_gate ctrl ctrlb in out vt_bulk_n_gnd! vt_bulk_p_vdd!
+xm0 in ctrlb out vt_bulk_p_vdd! p105 w=0.1u l=0.03u nf=1 m=2
+xm1 in ctrl out vt_bulk_n_gnd! n105 w=0.1u l=0.03u nf=1 m=1
+.ends pass_gate
+
+********************************************************************************
+* Library          : LOW_VOLTAGE_PLL
+* Cell             : CP
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt cp dn gnd_1 up vctrl vdd vt_bulk_n_gnd! vt_bulk_p_vdd!
+xm1 vctrl gnd_1 net4 vt_bulk_p_vdd! p105 w=0.1u l=0.03u nf=1 m=200
+xm0 net4 net3 vdd vt_bulk_p_vdd! p105 w=0.1u l=0.03u nf=1 m=1
+xm3 net10 net16 gnd_1 vt_bulk_n_gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm2 vctrl vdd net10 vt_bulk_n_gnd! n105 w=0.1u l=0.03u nf=1 m=100
+xi4 gnd_1 up net3 vdd vt_bulk_n_gnd! vt_bulk_p_vdd! inv
+xi5 vdd gnd_1 dn net16 vt_bulk_n_gnd! vt_bulk_p_vdd! pass_gate
+.ends cp
+
+********************************************************************************
+* Library          : LOW_VOLTAGE_PLL
+* Cell             : NAND_2IP
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt nand_2ip gnd_1 in1 in2 out vdd
+xm11 net38 in1 gnd_1 gnd_1 n105 w=0.518u l=0.03u nf=1 m=1
+xm10 out in2 net38 gnd_1 n105 w=0.518u l=0.03u nf=1 m=1
+xm8 out in1 vdd vdd p105 w=0.654u l=0.03u nf=1 m=1
+xm9 out in2 vdd vdd p105 w=0.654u l=0.03u nf=1 m=1
+.ends nand_2ip
+
+********************************************************************************
+* Library          : LOW_VOLTAGE_PLL
+* Cell             : NOR_2IP
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt nor_2ip gnd_1 in1 in2 out vdd
+xm12 out in1 gnd_1 gnd_1 n105 w=0.518u l=0.03u nf=1 m=1
+xm10 out in2 gnd_1 gnd_1 n105 w=0.518u l=0.03u nf=1 m=1
+xm13 net53 in1 vdd vdd p105 w=0.654u l=0.03u nf=1 m=4
+xm9 out in2 net53 vdd p105 w=0.654u l=0.03u nf=1 m=4
+.ends nor_2ip
+
+********************************************************************************
+* Library          : LOW_VOLTAGE_PLL
+* Cell             : DFF_RESET
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt dff_reset clkin d gnd_1 q qb reset vdd vt_bulk_n_gnd! vt_bulk_p_vdd!
+xi4 clkb clk net21 net29 vt_bulk_n_gnd! vt_bulk_p_vdd! pass_gate
+xi6 clk clkb net27 net29 vt_bulk_n_gnd! vt_bulk_p_vdd! pass_gate
+xi1 clkb clk net16 net12 vt_bulk_n_gnd! vt_bulk_p_vdd! pass_gate
+xi0 clk clkb d net12 vt_bulk_n_gnd! vt_bulk_p_vdd! pass_gate
+xi16 gnd_1 rst rstb vdd vt_bulk_n_gnd! vt_bulk_p_vdd! inv
+xi12 gnd_1 clkb clk vdd vt_bulk_n_gnd! vt_bulk_p_vdd! inv
+xi11 gnd_1 clkin clkb vdd vt_bulk_n_gnd! vt_bulk_p_vdd! inv
+xi10 gnd_1 net27 q vdd vt_bulk_n_gnd! vt_bulk_p_vdd! inv
+xi9 gnd_1 net28 qb vdd vt_bulk_n_gnd! vt_bulk_p_vdd! inv
+xi8 gnd_1 net28 net27 vdd vt_bulk_n_gnd! vt_bulk_p_vdd! inv
+xi15 gnd_1 reset rst vdd vt_bulk_n_gnd! vt_bulk_p_vdd! inv
+xi5 gnd_1 net21 net16 vdd vt_bulk_n_gnd! vt_bulk_p_vdd! inv
+xi13 gnd_1 rstb net12 net21 vdd nand_2ip
+xi14 gnd_1 rst net29 net28 vdd nor_2ip
+.ends dff_reset
+
+********************************************************************************
+* Library          : LOW_VOLTAGE_PLL
+* Cell             : PFD
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt pfd ckfb ckref dn gnd_1 up vdd vt_bulk_n_gnd! vt_bulk_p_vdd!
+xi1 ckfb vdd gnd_1 dn net9 net12 vdd vt_bulk_n_gnd! vt_bulk_p_vdd! dff_reset
+xi0 ckref vdd gnd_1 up net2 net12 vdd vt_bulk_n_gnd! vt_bulk_p_vdd! dff_reset
+xi2 gnd_1 dn up net12 vdd nand_2ip
+.ends pfd
+
+********************************************************************************
+* Library          : LOW_VOLTAGE_PLL
+* Cell             : FORWARD_PATH_INVERTER
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt forward_path_inverter gnd_1 in out vctrl vd vdd
+xm1 out in net5 vd p105_lvt w=1u l=0.03u nf=10 m=90
+xm0 net5 gnd_1 vdd vctrl p105_lvt w=1u l=0.03u nf=10 m=150
+xm2 out in gnd_1 gnd_1 n105_lvt w=0.1u l=0.03u nf=10 m=40
+.ends forward_path_inverter
+
+********************************************************************************
+* Library          : LOW_VOLTAGE_PLL
+* Cell             : FEED_FORWARD_PATH_INVERTER
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt feed_forward_path_inverter gnd_1 in out vdd vf
+xm1 out in vdd vf p105_lvt w=1u l=0.03u nf=10 m=16
+xm2 out in gnd_1 gnd_1 n105_lvt w=0.1u l=0.03u nf=10 m=8
+.ends feed_forward_path_inverter
+
+********************************************************************************
+* Library          : LOW_VOLTAGE_PLL
+* Cell             : RING_VCO
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt ring_vco gnd_1 outn outp vctrl vd vdd vf
+xi11 gnd_1 o1 o2 vctrl vd vdd forward_path_inverter
+xi3 gnd_1 outp o1 vctrl vd vdd forward_path_inverter
+xi12 gnd_1 o2 outn vctrl vd vdd forward_path_inverter
+xi13 gnd_1 outn outp vctrl vd vdd forward_path_inverter
+xi18 gnd_1 outp o2 vdd vf feed_forward_path_inverter
+xi15 gnd_1 o1 outn vdd vf feed_forward_path_inverter
+xi16 gnd_1 o2 outp vdd vf feed_forward_path_inverter
+xi17 gnd_1 o1 outn vdd vf feed_forward_path_inverter
+c25 outp gnd! c=0.01p ic=0.6
+.ends ring_vco
+
+********************************************************************************
+* Library          : LOW_VOLTAGE_PLL
+* Cell             : DFF
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt dff clkin d gnd_1 q qb vdd vt_bulk_n_gnd! vt_bulk_p_vdd!
+xi4 clkb clk net21 net29 vt_bulk_n_gnd! vt_bulk_p_vdd! pass_gate
+xi6 clk clkb net27 net29 vt_bulk_n_gnd! vt_bulk_p_vdd! pass_gate
+xi1 clkb clk net16 net12 vt_bulk_n_gnd! vt_bulk_p_vdd! pass_gate
+xi0 clk clkb d net12 vt_bulk_n_gnd! vt_bulk_p_vdd! pass_gate
+xi12 gnd_1 clkb clk vdd vt_bulk_n_gnd! vt_bulk_p_vdd! inv
+xi11 gnd_1 clkin clkb vdd vt_bulk_n_gnd! vt_bulk_p_vdd! inv
+xi10 gnd_1 net27 q vdd vt_bulk_n_gnd! vt_bulk_p_vdd! inv
+xi9 gnd_1 net28 qb vdd vt_bulk_n_gnd! vt_bulk_p_vdd! inv
+xi8 gnd_1 net28 net27 vdd vt_bulk_n_gnd! vt_bulk_p_vdd! inv
+xi7 gnd_1 net29 net28 vdd vt_bulk_n_gnd! vt_bulk_p_vdd! inv
+xi5 gnd_1 net21 net16 vdd vt_bulk_n_gnd! vt_bulk_p_vdd! inv
+xi2 gnd_1 net12 net21 vdd vt_bulk_n_gnd! vt_bulk_p_vdd! inv
+.ends dff
+
+********************************************************************************
+* Library          : LOW_VOLTAGE_PLL
+* Cell             : FREQUENCY_DIVIDER_BY_2
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt frequency_divider_by_2 clkin gnd_1 out outb vdd vt_bulk_n_gnd!
++ vt_bulk_p_vdd!
+xi0 clkin out gnd_1 outb out vdd vt_bulk_n_gnd! vt_bulk_p_vdd! dff
+.ends frequency_divider_by_2
+
+********************************************************************************
+* Library          : LOW_VOLTAGE_PLL
+* Cell             : PLL_TOP
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 dn gnd_1 up net55 vdd gnd! vdd! cp
+xi1 ckfb ckref dn gnd_1 up vdd gnd! vdd! pfd
+xi2 gnd_1 out net13 vctrl vdd vdd vdd ring_vco
+xi14 out_8 gnd_1 net67 net44 vdd gnd! vdd! frequency_divider_by_2
+xi10 out_4 gnd_1 out_8 net33 vdd gnd! vdd! frequency_divider_by_2
+xi30 net67 gnd_1 ckfb net71 vdd gnd! vdd! frequency_divider_by_2
+xi8 out_2 gnd_1 out_4 net28 vdd gnd! vdd! frequency_divider_by_2
+xi3 net65 gnd_1 out_2 net20 vdd gnd! vdd! frequency_divider_by_2
+r11 net55 vctrl r=30k
+c13 vctrl gnd_1 c=10p
+c12 vctrl gnd_1 c=50p ic=0.6
+v26 vdd gnd! dc=0.6
+v24 gnd_1 gnd! dc=0
+v27 ckref gnd! dc=0.6 pulse ( 0 0.6 0 10p 10p '(0.5/FREF)' '(1/FREF)' )
+xi28 gnd_1 out net62 vdd gnd! vdd! inv
+xi29 gnd_1 net62 net65 vdd gnd! vdd! inv
+
+
+
+
+
+
+
+
+.tran '0.001*(100u-0)' '100u' name=tran
+
+.option primesim_remove_probe_prefix = 0
+.probe v(*) i(*) level=1
+.probe tran v(ckfb) v(ckref) v(dn) v(out) v(out_2) v(out_4) v(out_8) v(up)
++ v(vctrl) v(net55) isub(xi0.vctrl)
+
+.temp 25
+
+
+
+.option primesim_output=wdf
+
+
+.option parhier = LOCAL
+
+
+
+
+
+
+.end
