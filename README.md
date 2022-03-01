@@ -7,7 +7,8 @@ For low power applications, PLL design becomes challenging task because of lower
 
 ![PLL](https://user-images.githubusercontent.com/48211474/156175166-76aab5ba-b27f-47b7-93d9-a235cfaf3c83.png)
                                                                   Fig:1 Low Voltage PLL
-
+                                                                
+Feedforward Ring VCO consist of Forward path inverters and feedforward path inverters. 
 ![image](https://user-images.githubusercontent.com/48211474/156181023-d5cf4ed1-28e3-4813-a527-740eebe1ed6a.png)
 Fig:2 Feedforward Ring VCO
 
