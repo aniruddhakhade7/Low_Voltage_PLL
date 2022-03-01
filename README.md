@@ -61,6 +61,7 @@ Following is the Frequency v/s time plot to show the noise suppression effect. R
    ![image](https://user-images.githubusercontent.com/48211474/156202021-54e1a86c-ee68-4621-8d08-82b5872c3448.png) <br/>
                                         Fig 15: NAND gate schematics <br/>
                                         
-
+![image](https://user-images.githubusercontent.com/48211474/156202496-e1eb1e7e-192f-400b-93c9-a01676b22d21.png) <br/>
+                                         Fig 16: PFD simulation results <br/>
 
 
