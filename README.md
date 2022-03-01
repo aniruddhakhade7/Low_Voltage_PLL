@@ -33,13 +33,14 @@ VCO is designed as shown in Fig: 5. It has feedforward and feedback inverter as 
                                         
 ![image](https://user-images.githubusercontent.com/48211474/156194218-1d044628-dd81-4053-8baf-e42f0908488b.png)<br/>
                                         Fig 7: Feedback path inverter <br/>
-                                        
+            
+ Noise sensing is designed accordingly as per explained in previous section. <br/>
  ![image](https://user-images.githubusercontent.com/48211474/156195259-03ef90cd-437a-45bb-9504-640dad45a7c1.png)<br/>
                                        Fig 8: Noise Sensing block
                                        
    ![image](https://user-images.githubusercontent.com/48211474/156195438-7371c52e-a684-4acc-970c-c5cce27699af.png) <br/>
                                        Fig 9: Inverting Amplifier
-
+VCO along with supply noise sensing block is as follows: <br/>
 ![image](https://user-images.githubusercontent.com/48211474/156195872-b2415a05-fdcf-48bb-9f3b-845e5c66ec3b.png) <br/>
                                        Fig 10: VCO along with noise sensing block
 
