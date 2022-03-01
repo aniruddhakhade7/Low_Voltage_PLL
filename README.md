@@ -23,7 +23,7 @@ If we have supply noise of sinusoidal nature (Assumed noise to be sinusoid for i
 Fig 4: Noise sensing functioning
 
 # Feedforward Ring VCO design
-![image](https://user-images.githubusercontent.com/48211474/156193952-0d8d8d6a-8b9b-40c5-934c-fbc323572df2.png)
+![image](https://user-images.githubusercontent.com/48211474/156193952-0d8d8d6a-8b9b-40c5-934c-fbc323572df2.png) <br/>
                                         Fig 5: Feedforward Ring VCO schematics
 
 ![image](https://user-images.githubusercontent.com/48211474/156194136-0147c5da-8110-4c25-a404-7b670fc3078e.png)
