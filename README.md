@@ -21,3 +21,9 @@ Fig 3: Noise sensing block
 If we have supply noise of sinusoidal nature (Assumed noise to be sinusoid for illustration but it will be random), then Vn and Vnavg will be sinusoid and filtred DC  respectively. This value is then given to inverting amplifier which will then generate Vd and Vf which are complementary to each other. When supply noise increases,Vn will increase hence Vd will increase and Vf will decrease. When supply noise increases, Oscillation frequency will increase when there is no noise sensing block. Noise sensing block will work in opposite direction and reduce frequency proportional to supply noise. Therefore Supply Noise effect will be reduced.
 ![image](https://user-images.githubusercontent.com/48211474/156192027-315459eb-2783-411b-ab08-d3367bee7428.png)
 Fig 4: Noise sensing functioning
+
+# Feedforward Ring VCO design
+![image](https://user-images.githubusercontent.com/48211474/156193952-0d8d8d6a-8b9b-40c5-934c-fbc323572df2.png)
+Fig 5: Feedforward Ring VCO schematics
+
+
