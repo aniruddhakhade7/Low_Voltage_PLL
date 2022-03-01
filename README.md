@@ -46,5 +46,7 @@ VCO along with supply noise sensing block is as follows: <br/>
 Above VCO along with noise sensing block was simulated. Following are the waveforms. We can observe the relationship between VDD, Vn and Vnavg which we discussed in previous section
 ![image](https://user-images.githubusercontent.com/48211474/156198451-11449172-d6be-47eb-bfff-aaf351bfc624.png)
                                        Fig 11: VCO along with noise sensing block simulation results
+Following is the Frequency v/s time plot to show the noise suppression effect. Red plot is output frequency vs time for VCO with sinusoidal supply noise without noise sensing and blue plot is with noise sensing
+![image](https://user-images.githubusercontent.com/48211474/156200097-554e13cc-b28e-41ec-9a79-522d3292aca6.png)
 
 
