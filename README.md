@@ -76,6 +76,17 @@ Following is the Frequency v/s time plot to show the noise suppression effect. R
                                        Fig 14: Feedback Frequency divider schematics
    ![image](https://user-images.githubusercontent.com/48211474/156203520-26785dd9-8fbd-4880-929b-ab838720864d.png) <br/>
                                        Fig 15: Divide by 2 Frequency divider schematics
+   ![image](https://user-images.githubusercontent.com/48211474/156204708-7bd21fa4-1b3c-41e9-8adc-284b4a11d757.png)
+                                        Fig 16: Divide by 2 Frequency divider simulation results
+                                        
+ # Loop Filter
+ Loop filter was designed using Resistor and Capacitor. It is second order loop filter. Following is the schematics.
+ ![image](https://user-images.githubusercontent.com/48211474/156205157-09498c41-4371-4297-82f0-a835ab5561e5.png) <br/>
+                                        Fig 17: Loop filter
+                                        
+ 
+
+
                                        
 
 
