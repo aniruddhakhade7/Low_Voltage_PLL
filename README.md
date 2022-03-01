@@ -90,6 +90,14 @@ Following is the Frequency v/s time plot to show the noise suppression effect. R
                                        Fig 18: PLL Top level schematics
      
   **Reference frequency of 36.94MHz was selected and Divide ratio was 32. So desired output frequency was 1182 MHz**
+  
+  Following is the simulation results for designed PLL:
+  ![image](https://user-images.githubusercontent.com/48211474/156207222-b2d00d78-b25e-4360-a75b-8e3393e132f6.png) <br/>
+                                       Fig 19: PLL control Voltage settling
+  Here Initial voltage at loop filter was set as 0.6 for faster PLL simulations. Therefore PLL started settling from 0.6 and it settled around 14 us
+  
+  
+
                                         
  
 
