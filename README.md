@@ -71,7 +71,7 @@ Following is the Frequency v/s time plot to show the noise suppression effect. R
                                         Fig 13: Charge pump schematics <br/>
                                         
  # Feedback Frequency divider
- Feedback frequency divider was built using Divide by 2 frequency divider block. Following is the Feedback frequency divider schematics.
+ Feedback frequency divider ( Divide by 32) was built using Divide by 2 frequency divider block. Following is the Feedback frequency divider schematics.
  ![image](https://user-images.githubusercontent.com/48211474/156203385-8b8a8625-6216-4614-a1c5-70d964753806.png) <br/>
                                        Fig 14: Feedback Frequency divider schematics
    ![image](https://user-images.githubusercontent.com/48211474/156203520-26785dd9-8fbd-4880-929b-ab838720864d.png) <br/>
@@ -83,6 +83,13 @@ Following is the Frequency v/s time plot to show the noise suppression effect. R
  Loop filter was designed using Resistor and Capacitor. It is second order loop filter. Following is the schematics.
  ![image](https://user-images.githubusercontent.com/48211474/156205157-09498c41-4371-4297-82f0-a835ab5561e5.png) <br/>
                                         Fig 17: Loop filter
+                                        
+ # PLL Top Level design
+ All sub-blocks are then used to design PLL top level. Following is the schamtics:
+ ![image](https://user-images.githubusercontent.com/48211474/156205577-18c24922-27b8-443b-8026-8a551610c145.png) <br/>
+                                       Fig 18: PLL Top level schematics
+     
+  **Reference frequency of 36.94MHz was selected and Divide ratio was 32. So desired output frequency was 1182 MHz**
                                         
  
 
