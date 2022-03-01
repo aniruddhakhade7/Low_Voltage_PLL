@@ -49,5 +49,18 @@ Above VCO along with noise sensing block was simulated. Following are the wavefo
 Following is the Frequency v/s time plot to show the noise suppression effect. Red plot is output frequency vs time for VCO with sinusoidal supply noise without noise sensing and yellow plot is with noise sensing
 ![image](https://user-images.githubusercontent.com/48211474/156200097-554e13cc-b28e-41ec-9a79-522d3292aca6.png)
                                        Fig 12: VCO output frequency comparison
+                                       
+ 
+ 
+ # Phase Frequency Detector (PFD) Design
+ PFD was designed to detect phase difference between reference and feedback signal. This will generate UP and DN pulse depending on phase difference between the signals. Following is the schematic of the PFD
+ ![image](https://user-images.githubusercontent.com/48211474/156201771-05ba27fa-3e3f-45d6-8991-df890b017392.png)
+                                        Fig 13: PFD schematics
+  ![image](https://user-images.githubusercontent.com/48211474/156201902-5960924a-a7f7-4e5f-8ba8-bb943cbd8c23.png)
+                                        Fig 14: D flipflop schematics
+   ![image](https://user-images.githubusercontent.com/48211474/156202021-54e1a86c-ee68-4621-8d08-82b5872c3448.png)
+                                        Fig 15: NAND gate schematics
+                                        
+
 
 
