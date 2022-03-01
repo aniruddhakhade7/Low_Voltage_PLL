@@ -17,5 +17,5 @@ The Noise sensing block shown in Fig  3 has two current branches. In one branch,
 ![image](https://user-images.githubusercontent.com/48211474/156181549-fc9dc8b7-0bf9-4bd5-8f98-517ada385e08.png)
 Fig 3: Noise sensing block
 
-![image](https://user-images.githubusercontent.com/48211474/156191786-2643b33f-6d3f-4b82-84ba-dd0e1f73decf.png)
+![image](https://user-images.githubusercontent.com/48211474/156192027-315459eb-2783-411b-ab08-d3367bee7428.png)
 Fig 4: Noise sensing functioning
