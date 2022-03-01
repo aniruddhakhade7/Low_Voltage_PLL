@@ -27,7 +27,9 @@ Fig 4: Noise sensing functioning
                                         Fig 5: Feedforward Ring VCO schematics
 
 ![image](https://user-images.githubusercontent.com/48211474/156194136-0147c5da-8110-4c25-a404-7b670fc3078e.png) <br/>
-                                        Fig 6: Feedforward path inverter
+                                        Fig 6: Feedforward path inverter <br/>
+                                        
+                                        
 ![image](https://user-images.githubusercontent.com/48211474/156194218-1d044628-dd81-4053-8baf-e42f0908488b.png)<br/>
                                         Fig 7: Feedback path inverter
 
