@@ -1,0 +1,7 @@
+For low power applications, PLL design becomes challenging task because of lower suppl voltage. As supply voltage
+scales down, supply voltage noise also needs to be considered
+while designing any block. There are many factor contributing
+to supply voltage noise. One simple technique is to place
+large capacitor between supply and ground. This requires
+sufficiently larger area.
+In the discussed design
