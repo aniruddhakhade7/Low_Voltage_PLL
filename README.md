@@ -40,5 +40,7 @@ VCO is designed as shown in Fig: 5. It has feedforward and feedback inverter as 
    ![image](https://user-images.githubusercontent.com/48211474/156195438-7371c52e-a684-4acc-970c-c5cce27699af.png) <br/>
                                        Fig 9: Inverting Amplifier
 
+![image](https://user-images.githubusercontent.com/48211474/156195872-b2415a05-fdcf-48bb-9f3b-845e5c66ec3b.png) <br/>
+                                       Fig 10: VCO along with noise sensing block
 
 
