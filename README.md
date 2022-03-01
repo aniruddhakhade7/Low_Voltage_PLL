@@ -65,3 +65,18 @@ Following is the Frequency v/s time plot to show the noise suppression effect. R
                                          Fig 16: PFD simulation results <br/>
 
 
+# Charge Pump 
+   Charge Pump will generate proportional current to UP and DN pulse. Following is the schematics of designed Charge pump. Charge pump current will then be passed to loop filter to generate control voltage for VCO.
+   ![image](https://user-images.githubusercontent.com/48211474/156203062-dfdb6cf8-1bd8-47b1-ac40-d33cd361fc07.png) <br/>
+                                        Fig 13: Charge pump schematics <br/>
+                                        
+ # Feeback Frequency divider
+ Feedback frequency divider was built using Divide by 2 frequency divider block. Following is the Feedback frequency divider schematics.
+ ![image](https://user-images.githubusercontent.com/48211474/156203385-8b8a8625-6216-4614-a1c5-70d964753806.png) <br/>
+                                       Fig 14: Feedback Frequency divider schematics
+   ![image](https://user-images.githubusercontent.com/48211474/156203520-26785dd9-8fbd-4880-929b-ab838720864d.png) <br/>
+                                       Fig 15: Divide by 2 Frequency divider schematics
+                                       
+
+
+ 
