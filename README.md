@@ -50,7 +50,7 @@ Following is the Frequency v/s time plot to show the noise suppression effect. R
 ![image](https://user-images.githubusercontent.com/48211474/156200097-554e13cc-b28e-41ec-9a79-522d3292aca6.png)
                                        Fig 12: VCO output frequency comparison
                                        
- 
+                              **VCO was designed for frequency range of 1.1GHz to 1.2GHz**
  
  # Phase Frequency Detector (PFD) Design
  PFD was designed to detect phase difference between reference and feedback signal. This will generate UP and DN pulse depending on phase difference between the signals. Following is the schematic of the PFD
